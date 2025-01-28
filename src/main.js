@@ -1,6 +1,6 @@
-// document.getElementById("btn").addEventListener("click",()=>{
-//   alert("Clicked");
-// })
+document.getElementById("btn").addEventListener("click",()=>{
+  alert("click the buttons below to enjoy the tune!");
+})
 
 
 let numberOfButtons=document.querySelectorAll(".drum").length;//7s
@@ -50,3 +50,7 @@ function playSound(button){
       break;
   }
 }
+
+document.addEventListener("keydown", (event)=>{
+  playSound(event.key)
+});
