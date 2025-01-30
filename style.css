@@ -2,26 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:lightpink
+  background-color: maroon
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: brown;
+  background-color: gold;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   text-align: center;
+  border: 10px solid gold; /* Golden border around the entire page */
+  border-radius: 20px;
 }
 
 .drum {
-  background-color: yellow;
-  color: red;
+  background-color: white;
+  color: black;
   border: none;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.3s;
   height: 110px;
@@ -57,12 +59,29 @@ body {
 
 .l{
   background-image: url("images/kick.png");
-
 }
 
+button{
+  background-color: gold;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-/* .drum:hover {
-  
-} */
+button:hover {
+  background-color: darkgoldenrod;
+  transform: scale(1.1); 
+}
+
+/* Hover effect for drum buttons */
+.drum:hover {
+  transform: scale(1.1); 
+  background-color: darkgoldenrod; 
+}
+
+h1 {
+  color: gold;
+}
 
 
